@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  long long int n,i,j,k,m;
+    string s;
+    char a[n][26],b[n][26],c[n][26],d[1][27];
+    // Storing values in the array
+    for(i=0;i<n;i++) {
+        cin>>k;
+        if(k<=1000000) {
+            cin>>a[k];
+        }
+        if(k>=1000001 && k<=9999999) {
+            k=k%1000000;
+            cin>>b[k];
+        }
+        if(k>=100000000 && k<=99999999) {
+            k=k%10000000;
+            cin>>c[k];
+        }
+        if(k==1000000000) {
+            k=k%100000000;
+            cin>>d[k];
+        }
+        // Using values stored in the array
+         if(k<=1000000) {
+            cout<<a[k];
+        }
+        if(k>=1000001 && k<=9999999) {
+            k=k%1000000;
+            cout<<b[k];
+        }
+        if(k>=100000000 && k<=99999999) {
+            k=k%10000000;
+            cout<<c[k];
+        }
+        if(k==1000000000) {
+            k=k%100000000;
+            cout<<d[k];
+        }
+}
