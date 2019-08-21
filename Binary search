@@ -6,7 +6,7 @@ int main()
     int a[n];
     for(i=0;i<n;i++)
     scanf("%d",&a[i]);
-    scanf("%d",&item); // item to find in the given array
+    scanf("%d",&item);
     binary_sort(a,n,item);
 }
 int binary_sort(int a[],int n,int item)
